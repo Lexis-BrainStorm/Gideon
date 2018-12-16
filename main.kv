@@ -1,0 +1,1253 @@
+#: import Window kivy.core.window
+
+<LearnMorePopup>:
+	size_hint:.7,.7
+	title:'Gmail Usage Ethics'
+	content:content
+	auto_dismiss:True
+
+	BoxLayout:
+		id:content
+		orientation:'vertical'
+		background_color:0,1,1,1
+		ScrollView:
+
+			Label:
+				text:'This Gmail tool is built to function with the speed of light. \n you can tap the save button and save your email,\n username and password so that you just have to write down the recipients, \n and have a one tap to send it all'
+
+
+
+<YahooLikeGmail>:
+	GridLayout:
+		cols:1
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Yahoo Like Gmail'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'rollback'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+        GridLayout:
+        	cols:1
+
+        	Label:
+        		text:'this is the yahoo like gmails content'
+
+
+<KnowMore>:
+
+	GridLayout:
+		cols:1
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'More On Yahoo Marketing'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'rollback'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+        GridLayout:
+        	cols:1
+
+        	Label:
+        		text:'yahoo more details'
+
+
+
+<Yahoo_crush>:
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Yahoo crusher'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'rollback'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+        GridLayout:
+        	cols:1
+
+        	Label:
+        		text:'this is the yahoo crusher'
+
+<Yahoo_tool>:
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Yahoo Tool'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'rollback'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+        GridLayout:
+        	cols:2
+
+        	GridLayout:
+        		cols:2
+
+        		Label:
+        			text:'Yahoo Username'
+        		TextInput:
+	        		id:gmailuser
+	        		multiline:False
+	        		size_hint_y:None
+	        		hint_text:'Username'
+	        		height:60
+	        		hint_text:'Yahoo Username'
+
+        		Label:
+        			text:'Yahoo Password'
+
+        		TextInput:
+	        		id:gmailpassword
+	        		multiline:False
+	        		size_hint_y:None
+	        		height:60
+	        		hint_text:'Password'
+        		Label:
+        			text:'Recipients Yahoo Mail'
+        		TextInput:
+	        		id:recipient_mail
+	        		multiline:False
+	        		size_hint_y:None
+	        		height:60
+
+
+        		Label:
+        			text:'Messages'
+        		TextInput:
+	        		id:'Messages'
+	        		size_hint_y:None
+	        		height:200
+	        		hint_text:'Speed of light! it only takes a second'
+	   
+				Button:
+        			text:'Send Message'
+        			halign:'center'
+
+        		Button:
+        			text:'Learn More'
+        			id:popup
+
+<Gmail_Tool>:
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Gmail Tool'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'rollback'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+        GridLayout:
+        	cols:2
+
+        	Label:
+        		text:'Gmail Username'
+        	TextInput:
+        		id:gmailuser
+        		multiline:False
+        		size_hint_y:None
+        		hint_text:'Username'
+        		height:60
+        		hint_text:'Gmail UserName'
+
+        	Label:
+        		text:'Gmail Password'
+
+        	TextInput:
+        		id:gmailpassword
+        		multiline:False
+        		size_hint_y:None
+        		height:60
+        		hint_text:'Password'
+        	Label:
+        		text:'recipients gmail'
+        	TextInput:
+        		id:recipient_mail
+        		multiline:False
+        		size_hint_y:None
+        		height:60
+
+
+        	Label:
+        		text:'Messages'
+        	TextInput:
+        		id:messages
+        		size_hint_y:None
+        		height:200
+        		hint_text:'Yahoo crowns it all special'
+   
+			Button:
+        		text:'Send Message'
+        		halign:'center'
+        		on_press:root.Store_Mail()
+
+        	Button:
+        		text:'Learn More'
+        		id:popup
+        		on_press:root.learnmore()
+
+	
+
+
+
+
+
+
+
+<PrototypeMail>:
+	GridLayout:
+		cols:1
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Prototype mails'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'return'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+        GridLayout:
+        	cols:1
+        	
+	
+
+
+
+<Relieve_gmail>:
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Gmail Relieves Burdens'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'return'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+        GridLayout:
+        	cols:1
+        	Label:
+        		text:'How Gmail Relieves your burdens'
+        		font_size:50
+        	Label:
+        		text:'Get started'
+	
+
+
+<About_gmail>:
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'About Gmail'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'return'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+        GridLayout:
+        	cols:1
+
+        	Label:
+        		text:'About Gmail'
+        		font_size:50
+
+        	Label:
+        		text:'About Gmail Get started'
+	
+
+<B_Improve>:
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'B_Improve'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'return'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+        GridLayout:
+        	cols:1
+        	size:self.width,.1
+
+			Label:
+                text:'Gmail improves and Gmail marketing helps improve customer engagements,proficiency and efficiency'
+                font_size:30
+                color:0,0,1,1
+            ScrollView:
+                Label:
+                    text:'all about Gmail should be pasted here'
+
+
+<Utils>:
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Random Tools'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'return'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+        GridLayout:
+        	rows:1
+        	Button:
+        		text:'check temperature'
+
+        	Button:
+        		text:'view mobiles unique id'
+
+        	Button:
+        		text:'make calls'
+
+        	Button:
+        		text:'do anything'
+
+
+
+
+<CustomPopUp>:
+	size_hint:.7,.7
+	title:'Note'
+	content:content
+	auto_dismiss:True
+
+	BoxLayout:
+		id:content
+		orientation:'vertical'
+		background_color:0,1,1,1
+
+		ScrollView:
+
+
+			Label:
+				text:(''' hello am Alexis \n your database auto intelligent engineer please\n note that you can  only have\n one account in one device.\n If anything happens to your previous account,the database robot i \n created will automatically \n delete that account.\n One more thing, any changes specifically commited can only be viewed \n when you re-run the App.\n Thank you for using Gideon ''')
+				font_size:15
+
+
+		Button:
+			text:'Tap dismiss'
+			on_press:root.dismiss()
+
+
+<EditLogin>:
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Edit Info'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'return'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+
+		GridLayout:
+			cols:2
+			size:self.size
+			padding:10
+			spacing:10
+
+			Label:
+				text:'FullName'
+
+			TextInput:
+				id:newfullname
+
+			Label:
+				text:'username'
+
+			TextInput:
+				id:newusername
+
+			Label:
+				text:'Password'
+
+			TextInput:
+				id:newpassword
+
+			Label:
+				text:'D.O.B'
+
+			TextInput:
+				id:DOB
+
+			Label:
+				text:'Gender'
+			TextInput:
+				id:Gender
+
+			BoxLayout:
+				orientation:'horizontal'
+				spacing:10
+				padding:10
+
+				Button:
+					text:'Update'
+					on_press:root.update_me()
+
+				Button:
+					text:'RollBack'
+					on_press:
+
+
+				Button:
+					text:'Reset Form'
+					on_press:root.resetform()
+
+
+
+
+
+<LoginEdit>:
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Your Info'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:1,1,1,1
+            Button:
+            	text:'return'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+
+		GridLayout:
+			cols:2
+			size:self.size
+			padding:10
+			spacing:10
+			
+			Label:
+				text:'FullName'
+				font_size:20
+
+				
+			Label:
+				text:root.fullname()
+				color:(0,1,1,1)
+				font_size:20
+
+			Label:
+				text:'User Name'
+				font_size:20
+
+
+			Label:
+				text:root.username()
+				color:(0,1,1,1)
+				font_size:20
+
+
+			Label:
+				text:'password'
+				font_size:20
+
+			Label:
+				text:root.password()
+				color:(0,1,1,1)
+				font_size:20
+
+
+			Label:
+				text:'Gender'
+				font_size:20
+
+				
+			Label:
+				text:root.Gender()
+				color:(0,1,1,1)
+				font_size:20
+
+
+			Button:
+				text:'INFO'
+				on_press:root.info()
+		
+
+
+
+
+<GmailMenu>
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Gmail Free Tools'
+				font_size:30
+				halign: 'center'
+                text_size: root.width-60,55
+                color:0,1,0,1
+            Button:
+            	text:'RollBack'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+		BoxLayout:
+			orientation:'vertical'
+			size:self.size
+			padding:10
+			spacing:10
+			size:self.size
+
+
+			Button:
+				text:'Improving your business with gmail'
+				border:[2,2,2,2]
+				background_normal:'button_normal.png'
+				on_press:root.b_improve()
+			Button:
+				text:'Gmail Free Tool'
+				border:[2,2,2,2]
+				background_normal:'button_normal.png'
+				on_press:root.gmail_tool()
+			Button:
+				text:'about Gmail Free Tool'
+				background_normal:'button_normal.png'
+				on_press:root.about_gmail()
+			Button:
+				text:'How gmail relieves your burdens'
+				background_normal:'button_normal.png'
+				on_press:root.relieve_burden()
+			Button:
+				text:'send prototype mails'
+				background_normal:'button_normal.png'
+				on_press:root.prototype()
+
+<AppUpdateMenu>
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Updates'
+				font_size:50
+				halign: 'center'
+                text_size: root.width-60,55
+                color:0,1,0,1
+            Button:
+            	text:'return'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+		BoxLayout:
+			orientation:'vertical'
+			size:self.size
+			padding:10
+			spacing:10
+			size:self.size
+
+			Label:
+				text:'Current app updates is unavailable. We\'ll reach you, once its online'
+
+<YahooMenu>
+	GridLayout:
+		cols:1
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Yahoo Tool'
+				font_size:40
+				halign: 'left'
+                text_size: root.width-60,55
+                color:0,1,0,1
+            Button:
+            	text:'return'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+		GridLayout:
+			cols:2
+			size:self.size
+			padding:10
+			spacing:10
+			size:self.size
+
+			Button:
+				text:'Yahoo Crush'
+				background_normal:'button_normal.png'
+				on_press:root.yahoocrusher()
+			Button:
+				text:'Yahoo Tool'
+				background_normal:'button_normal.png'
+				on_press:root.yahootool()
+			Button:
+				text:'yahoo like gmail'
+				background_normal:'button_normal.png'
+				on_press:root.yahootwin()
+			Button:
+				text:'Know more'
+				background_normal:'button_normal.png'
+				on_press:root.knowmore()
+
+<FeedBackMenu>
+	GridLayout:
+		cols:1
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'FeedBack'
+				font_size:40
+				halign: 'center'
+                text_size: root.width-60,55
+                color:0,1,0,1
+            Button:
+            	text:'return'
+            	size_hint_x:None
+            	width:60
+            	height:100
+            	on_press:root.return_mainscreen()
+
+		BoxLayout:
+			orientation:'vertical'
+			size:self.size
+			padding:10
+			spacing:10
+			size:self.size
+
+			Label:
+				text:'Your FeedBack Matters! You Could Improve this App, with a single Feedback message'
+			TextInput:
+				multiline:True
+				hint_text:'Your FeedBack Matters!'
+			GridLayout:
+				cols:2
+
+				Label:
+					text:'Gmail'
+				TextInput:
+					multiline:False
+					id:gmail
+
+				Label:
+					text:'Password'
+				TextInput:
+					id:password
+
+		Button:
+			text:'Submit FeedBack'
+
+
+		
+	
+<MyFirstLayout>:
+	orientation:'vertical'
+	padding:0
+	spacing:10
+
+	GridLayout:
+		rows:2
+
+		BoxLayout:
+			padding:10
+			spacing:10
+			size_hint_y:None
+			height:40
+
+			canvas.before:
+				Color:
+					rgba:0,0,1,1
+				Rectangle:
+					pos:self.pos
+					size:1500,130
+			Label:
+				text:'Gideon'
+				font_size:50
+				halign: 'left'
+                text_size: root.width-20,55
+
+
+		BoxLayout:
+			TabbedPanel:
+				do_default_tab:False
+				tab_width:self.parent.width/4
+			
+		
+
+
+				TabbedPanelItem:
+					background_color:0,0,1,1
+					background_normal:''
+					text:'Home'
+					BoxLayout:
+						canvas.before:
+							Rectangle:
+								pos:self.pos
+								size:self.size
+								source:'mainmenu.png'
+						GridLayout:
+							cols:2
+							rows:3
+							spacing:10
+							padding:5
+							size:self.size
+
+							
+							Button:
+								text:'Email Tool'
+								on_press:root.gmail_menu()
+								background_normal:'button_down.png'
+
+							
+							Button:
+								text:'App Updates'
+								on_press:root.app_updates()
+								background_normal:'button_down.png'
+								
+							Button:
+								text:'Yahoo Tool'
+								on_press:root.yahoo_tool()
+								background_normal:'button_down.png'
+								
+								
+							Button:
+								text:'Feedback'
+								background_normal:'button_down.png'
+								on_press:root.feed_back()
+								
+
+
+
+
+
+
+				TabbedPanelItem:
+					background_color:0,0,1,1
+					text:'Settings'
+					background_normal:'search.png'
+
+					BoxLayout:
+						canvas:
+							Color:
+								rgba:1,1,1,1
+							Rectangle:
+								pos:self.pos
+								size:self.size
+						GridLayout:
+							cols:2
+
+							Button:
+								text:'Settings Panel'
+								on_press:app.open_settings()
+							Button:
+								text:"edit login"
+								on_press:root.editinfo()
+							Button:
+								text:'login info'
+								on_press:root.edit_login()
+							Button:
+								text:'Utils & tools'
+								on_press:root.trans_util()
+				
+				TabbedPanelItem:
+					background_color:0,0,1,1
+					text:'Logout'
+					background_normal:''
+					BoxLayout:
+						orientation:'vertical'
+						canvas:
+							Color:
+								rgba:1,1,1,1
+							Rectangle:
+								pos:self.pos
+								size:self.size
+						Label:
+							text:'Welcome! You are connected'
+							color:0,0,1,1
+							font_size:50
+						Button:
+							text:'disconnect'
+							on_press:root.disconnect()
+
+
+				TabbedPanelItem:
+					background_color:0,0,1,1
+					text:'History'
+					background_normal:''
+					BoxLayout:
+						canvas:
+							Color:
+								rgba:1,1,1,1
+							Rectangle:
+								pos:self.pos
+								size:self.size
+								
+						Label:
+							text:'History'
+
+				TabbedPanelItem:
+					background_color:0,0,1,1
+					text:'Auto Synthetic'
+					background_normal:''
+					BoxLayout:
+						canvas:
+							Color:
+								rgba:1,1,1,1
+							Rectangle:
+								pos:self.pos
+								size:self.size
+								
+						Label:
+							text:'welcome to the mighty synth'
+
+
+
+				TabbedPanelItem:
+					background_color:0,0,1,1
+					text:'Help'
+					background_normal:''
+					GridLayout:
+						cols:1
+						canvas:
+							Color:
+								rgba:1,1,1,1
+							Rectangle:
+								source:'office.jpg'
+								pos:30,430
+								size:220,120
+						canvas.before:
+							Color:
+								rgba:1,1,1,1
+							Rectangle:
+								source:'bgimagee.png.png'
+								pos:self.pos
+								size:self.size
+
+						Label:	
+							text:'More Commands Are Yet To Be Updated.'
+							font_size:35
+							color:0,0,1,1
+							
+						Label:
+							text:'00--All thanks to the ceo of Gideon  and the owner of the is app 00--\n Emmanuel\n 00--To all the supporters and those who gave featuring\n opinions ..i Alexis solely promise not to.'
+							font_size:25
+							color:0,1,0,1
+
+
+						Label:
+							text:'this is fun..am still developing'
+
+
+
+<RegisterScreen>:
+    BoxLayout
+        id: login_layout
+        orientation: 'vertical'
+        padding: [10,50,10,50]
+        spacing: 50
+
+        canvas:
+            Rectangle:
+                source:'background.png'
+                pos:self.pos
+                size:self.size
+
+        Button:
+        	text:'return'
+            width:120
+        	font_size:30
+        	text_size:root.width-20,10
+        	valign:'top'
+        	halign:'left'
+        	size_hint_x:None
+        	size_hint_y:None
+        	height:30
+        	pos_hin:{'left':0.9,'top':1}
+        	background_normal:'button_normal.png'
+        	on_press:root.return_menu()
+
+        Label:
+            text: 'Register'
+            font_size: 35
+            color:0,0,1,1
+            size_hint_y:None
+            height:1
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            Label:
+                text: 'Full Name'
+                font_size: 18
+                size_hint_y:None
+                height:20
+                text_size: root.width-20, 20
+
+            TextInput:
+                id:fullname
+                multiline:False
+                font_size: 28
+                hint_text:'Full Name'
+                background_color:0,0,1,1
+                size_hint_y:None
+                height:40
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'UserName'
+                halign: 'left'
+                size_hint_y:None
+                height:20
+                font_size: 18
+                text_size: root.width-20, 20
+
+            TextInput:
+                id:username
+                multiline:False
+                password:False
+                font_size: 28
+                hint_text:'User Name'
+                background_color:0,0,1,1
+                size_hint_y:None
+                height:40
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Choose a password'
+                size_hint_y:None
+                height:20
+                halign: 'left'
+                font_size: 18
+                text_size: root.width-20, 20
+
+            TextInput:
+                id:Password
+                password:False
+                multiline:False
+                font_size: 28
+                hint_text:'hint: combine texts&int.'
+                background_color:0,0,1,1
+                size_hint_y:None
+                height:40
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Birth Date'
+                halign: 'left'
+                size_hint_y:None
+                height:20
+                font_size: 18
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: Birthdate
+                multiline:False
+                password:False
+                font_size: 28
+                hint_text:'2/5/2018'
+                background_color:0,0,1,1
+                size_hint_y:None
+                height:40
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Gender'
+                size_hint_y:None
+                height:20
+                halign: 'left'
+                font_size: 18
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: Gender
+                multiline:False
+                password:False
+                font_size: 28
+                hint_text:'Gender'
+                background_color:0,0,1,1
+                size_hint_y:None
+                size_hint_x:None
+                width:110
+                height:40
+
+
+
+
+
+
+        Button:
+            text: 'Submit'
+            font_size: 24
+            background_color:0,0,1,1
+            font_size: 24
+            size_hint_y:None
+            height:30
+
+
+            on_press:root.store_data()
